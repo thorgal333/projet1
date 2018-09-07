@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: auto auto 200px;
+
+
+            /* flex-direction: row-reverse; */
+            /* justify-content:flex-end; */
+            background-color: yellowgreen;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        aside {
+
+            background-color: aliceblue;
+        }
+
+        #content {
+
+            background-color: bisque;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Le layout avec CSS</h1>
+            <h2>Inline block</h2>
+        </header>
+
+        <aside>
+            <ul>
+                <li>
+                    <a href="http://Google.com">Google</a>
+                </li>
+                <li>
+                    <a href="http:yahoo.com">Yahoo</a>
+                </li>
+                <li>
+                    <a href="http://Facebook.com">Facebook</a>
+                </li>
+                <li>
+                    <a href="http://Google.com">Google</a>
+                </li>
+                <li>
+                    <a href="http:yahoo.com">Yahoo</a>
+                </li>
+                <li>
+                    <a href="http://Facebook.com">Facebook</a>
+                </li>
+            </ul>
+        </aside>
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, harum, totam culpa a nesciunt possimus in saepe
+                hic laudantium illum modi porro temporibus sit facere quos maiores corporis voluptatum consequatur eligendi
+                ut atque illo necessitatibus. Eos labore similique veniam quas.</p>
+
+
+        </div>
+
+        <footer>
+            <p>
+                <small>Copyright 2018 JFP</small>
+            </p>
+        </footer>
+    </div>
+</body>
+
+
+</html>
